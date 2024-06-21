@@ -29,13 +29,19 @@ const Footer = () => {
                 className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a href="" className="fab fa-dribbble"></a>
+                <a
+                  href="https://ktechspace.netlify.app/"
+                  className="fab fa-dribbble"
+                ></a>
               </button>
               <button
                 className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a href="" className="fab fa-github"></a>
+                <a
+                  href="https://github.com/kunal158"
+                  className="fab fa-github"
+                ></a>
               </button>
             </div>
           </div>
@@ -50,7 +56,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation?ref=njs-profile"
+                      href=""
                     >
                       About Us
                     </a>
@@ -58,7 +64,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://blog.creative-tim.com?ref=njs-profile"
+                      href=""
                     >
                       Blog
                     </a>
@@ -66,7 +72,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://www.github.com/creativetimofficial?ref=njs-profile"
+                      href="https://github.com/kunal158"
                     >
                       Github
                     </a>
@@ -74,7 +80,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
+                      href=""
                     >
                       Free Products
                     </a>
@@ -89,7 +95,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                      href=""
                     >
                       MIT License
                     </a>
@@ -97,7 +103,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/terms?ref=njs-profile"
+                      href="https://github.com/kunal158"
                     >
                       Terms & Conditions
                     </a>
@@ -105,7 +111,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/privacy?ref=njs-profile"
+                      href=""
                     >
                       Privacy Policy
                     </a>
@@ -113,7 +119,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/contact-us?ref=njs-profile"
+                      href=""
                     >
                       Contact Us
                     </a>
