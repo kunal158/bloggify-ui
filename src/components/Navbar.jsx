@@ -122,25 +122,6 @@ const Navbar = () => {
               {menu && <Menu />}
             </div>
           </li> */}
-          {!user ? (
-            <li>
-              <Toggle />
-            </li>
-          ) : (
-            <li>
-              <Link
-                to="/profile"
-                className={`${
-                  location.pathname === "/profile"
-                    ? "text-black text-[22px] font-semibold -mr-1"
-                    : "text-black text-[22px] font-semibold hover:text-black -mr-1"
-                } hover:text-primary transition duration-300`}
-              >
-                {user.username}
-              </Link>
-            </li>
-          )}
-
           {user ? (
             <li>
               <div onClick={showMenu}>
@@ -161,6 +142,24 @@ const Navbar = () => {
                 } hover:text-primary transition duration-300`}
               >
                 Register
+              </Link>
+            </li>
+          )}
+          {!user ? (
+            <li>
+              <Toggle />
+            </li>
+          ) : (
+            <li>
+              <Link
+                to="/profile"
+                className={`${
+                  location.pathname === "/profile"
+                    ? "text-black text-[22px] font-semibold -mr-1"
+                    : "text-black text-[22px] font-semibold hover:text-black -mr-1"
+                } hover:text-primary transition duration-300`}
+              >
+                {user.username}
               </Link>
             </li>
           )}

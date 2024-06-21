@@ -23,9 +23,10 @@ const Card = ({ post }) => {
           </div>
         </div>
 
-        <p className="mt-3 font-semibold text-gray-600 ">
-          {post.desc.slice(0, 50)}
-        </p>
+        <p
+          className="mt-3 font-semibold text-gray-600 "
+          dangerouslySetInnerHTML={{ __html: post.desc.slice(0, 50) }}
+        ></p>
         <span className="text-blue-800"> ...Read more</span>
       </div>
     </div>

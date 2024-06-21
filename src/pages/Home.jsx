@@ -22,7 +22,9 @@ const Home = () => {
   const fetchPosts = async () => {
     setLoader(true);
     try {
-      const res = await axios.get(URL + "/api/posts/" + search);
+      const res = await axios.get(
+        "https://bloggify-g3gf.onrender.com/api/posts/" + search
+      );
       // console.log(res.data)
       setPosts(res.data);
       if (res.data.length === 0) {
