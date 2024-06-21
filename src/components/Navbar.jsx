@@ -152,7 +152,7 @@ const Navbar = () => {
           ) : (
             <li>
               <Link
-                to="/profile"
+                to="/profile/:id"
                 className={`${
                   location.pathname === "/profile"
                     ? "text-black text-[22px] font-semibold -mr-1"
