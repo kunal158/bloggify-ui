@@ -10,8 +10,10 @@ export function UserContextProvider({ children }) {
   const navigate = useNavigate(); // Initialize useNavigate hook
 
   useEffect(() => {
-    const isAuthenticated = localStorage.getItem("isAuthenticated");
-    if (isAuthenticated) {
+    const localUser = JSON.parse(localStorage.getItem("user"));
+    if (localUser) {
+      setUser(localUser);
+    } else {
       getUser();
     }
   }, []);
@@ -23,13 +25,11 @@ export function UserContextProvider({ children }) {
       });
       console.log(res.data);
       setUser(res.data);
-      localStorage.setItem("isAuthenticated", true); // Set the flag in local storage
     } catch (err) {
       console.log(err);
       if (err.response && err.response.status === 401) {
         // Handle unauthorized access
         alert("You are not authorized. Please log in.");
-        localStorage.removeItem("isAuthenticated"); // Remove the flag on unauthorized access
         navigate("/login"); // Redirect to login page
       }
     }

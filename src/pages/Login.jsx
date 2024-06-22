@@ -15,13 +15,16 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const handlelogin = async () => {
+  const handleLogin = async () => {
     try {
       const res = await axios.post(
         URL + "/api/auth/login",
         { email, password },
         { withCredentials: true }
       );
+
+      // Store the user data in localStorage
+      localStorage.setItem("user", JSON.stringify(res.data));
 
       setUser(res.data);
       setEmail("");
@@ -32,7 +35,7 @@ const Login = () => {
       if (err.response && err.response.status === 400) {
         setError(err.response.data.message); // Set the specific error message
       } else {
-        setError("Error logging in !");
+        setError("Error logging in!");
       }
       console.log(err);
     }
