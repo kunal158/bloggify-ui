@@ -10,12 +10,7 @@ export function UserContextProvider({ children }) {
   const navigate = useNavigate(); // Initialize useNavigate hook
 
   useEffect(() => {
-    const localUser = JSON.parse(localStorage.getItem("user"));
-    if (localUser) {
-      setUser(localUser);
-    } else {
-      getUser();
-    }
+    getUser();
   }, []);
 
   const getUser = async () => {
